@@ -31,7 +31,7 @@ export default function BackToTop({}: Props) {
       style={{ display: visible ? 'inline' : 'none' }}
       children={
         <>
-          <ArrowUpCircle size={20} />
+          <ArrowUpCircle size={16} />
           Back to top
         </>
       }
