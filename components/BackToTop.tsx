@@ -28,10 +28,11 @@ export default function BackToTop({}: Props) {
     <button
       className="nx-text-xs flex flex-row gap-2 nx-font-medium nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
       onClick={scrollToTop}
-      style={{ display: visible }}
+      style={{ display: visible ? 'inline-flex' : 'none' }}
       children={
         <>
-          <ArrowUpCircle size={20} /> Back to top
+          <ArrowUpCircle size={20} /> 
+          <span>Back to top</span>
         </>
       }
     />
