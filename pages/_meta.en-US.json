@@ -1,0 +1,52 @@
+{
+  "-- Introduction --": {
+    "type": "separator",
+    "title": "Introduction"
+  },
+  "index": "Introduction",
+  "-- Accounts --": {
+    "type": "separator",
+    "title": "User Accounts"
+  },
+  "account": "Accounts",
+  "-- Legal --": {
+    "type": "separator",
+    "title": "Legal Documentation"
+  },
+  "legal": "Site Policies",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "pagination": false,
+      "typesetting": "article" 
+    }
+  },
+  "404": {
+    "title": "404 - This page could not be found",
+    "theme": {
+      "sidebar": false,
+      "pagination": false,
+      "toc": false
+    }
+  },
+  "500": {
+    "title": "500 - Internal Server Error",
+    "theme": {
+      "sidebar": false,
+      "pagination": false,
+      "toc": false
+    }
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:help.nitehub@gmail.com",
+    "newWindow": true
+  }
+}
