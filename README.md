@@ -1,8 +1,8 @@
 # Nitehub Documentation
 
-![](https://api.checklyhq.com/v1/badges/checks/44e6c977-6f74-4b6f-a108-2e32ba0d1d88?style=for-the-badge&theme=dark)
-![GitHub deployments](https://img.shields.io/github/deployments/c-eo/dochub/production?label=Vercel&logo=Vercel&style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/c-eo/dochub?style=for-the-badge)
+![](https://api.checklyhq.com/v1/badges/checks/42768b96-0c74-4bb7-b24a-c769ec1106ae?style=for-the-badge&theme=dark)
+![GitHub deployments](https://img.shields.io/github/deployments/c-eo/convoydocs/production?label=Vercel&logo=Vercel&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/c-eo/convoydocs?style=for-the-badge)
 
 
 This is a template for creating documentation with [Nextra](https://nextra.site).
