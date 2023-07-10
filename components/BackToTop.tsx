@@ -31,8 +31,8 @@ export default function BackToTop({}: Props) {
       style={{ display: visible ? 'inline-flex' : 'none', paddingTop: '16px' }}
       children={
         <>
-          <ArrowUpCircle size={20} style={{ marginRight: '1px' }} />
-          <span style={{ marginLeft: '1px' }}>Back to top</span>
+          <ArrowUpCircle size={20} style={{ marginRight: '5px' }} />
+          <span style={{ marginLeft: '5px' }}>Back to top</span>
         </>
       }
     />
