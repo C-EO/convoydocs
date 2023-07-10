@@ -3,15 +3,15 @@ import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import BackToTop from "./components/BackToTop";
 
-const NITEHUB_URL = "https://git.c-eo.repl.co";
+const CONVOYCHAT_URL = "https://convoychat.vercel.app";
 
 const TITLE_WITH_TRANSLATIONS = {
-  "en-US": "Nitehub Documentation",
-  "es-ES": "Documentación de Nitehub",
-  "fr-FR": "Documentation Nitehub",
-  "zh-CN": "Nitehub 文档",
-  "zh-TW": "Nitehub 文檔",
-  "de-DE": "Nitehub-Dokumentation",
+  "en-US": "ConvoyChat API Documentation",
+  "es-ES": "Documentación de ConvoyChat API",
+  "fr-FR": "Documentation ConvoyChat API",
+  "zh-CN": "ConvoyChat 应用程序编程接口 文档",
+  "zh-TW": "ConvoyChat 應用程序編程接口 文檔",
+  "de-DE": "ConvoyChat API-Dokumentation",
 };
 
 const SEARCH_PLACEHOLDER_WITH_TRANSLATIONS = {
@@ -86,12 +86,12 @@ const config: DocsThemeConfig = {
     );
   },
   project: {
-    link: "https://github.com/nitehub-org/",
+    link: "https://github.com/convoychat/convoychat",
   },
   chat: {
     link: "https://discord.gg/tEcXZ2FVuz",
   },
-  docsRepositoryBase: "https://github.com/C-EO/dochub/blob/main/",
+  docsRepositoryBase: "https://github.com/C-EO/convoydocs/blob/main/",
   footer: {
     text: (
       <span>
@@ -99,8 +99,8 @@ const config: DocsThemeConfig = {
           <b>CC-BY-4.0</b>
         </a>{ " " }
         Copyright © { new Date().getFullYear() }{ " " }
-        <a href={ NITEHUB_URL } target="_blank">
-          Nitehub Org.
+        <a href={ CONVOYCHAT_URL } target="_blank">
+          ConvoyChat Authors
         </a>{ " " }
         All rights reserved.
       </span>
@@ -113,16 +113,16 @@ const config: DocsThemeConfig = {
   //     <>
   //       <meta
   //         property="og:url"
-  //         content={ `https://dochub.vercel.app${asPath}` }
+  //         content={ `https://convoydocs.vercel.app${asPath}` }
   //       />
   //       <meta
   //         property="og:title"
-  //         content={ frontMatter.title || "Nitehub Documentation" }
+  //         content={ frontMatter.title || "ConvoyChat API Documentation" }
   //       />
   //       <meta
   //         property="og:description"
   //         content={
-  //           frontMatter.description || "The Official Nitehub Documentation."
+  //           frontMatter.description || "The Official ConvoyChat API Documentation."
   //         }
   //       />
   //       <meta name="msapplication-TileColor" content="#000000" />
@@ -137,13 +137,13 @@ const config: DocsThemeConfig = {
     const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
     const url =
-      'https://dochub.vercel.app' +
+      'https://convoydocs.vercel.app' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
       
     return <>
       <meta property="og:url" content={url} />
-      <meta property="og:title" content={frontMatter.title || 'Nitehub Documentation'} />
-      <meta property="og:description" content={frontMatter.description || 'The Official Nitehub Documentation.'} />
+      <meta property="og:title" content={frontMatter.title || 'ConvoyChat API Documentation'} />
+      <meta property="og:description" content={frontMatter.description || 'The Official ConvoyChat API Documentation.'} />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" content="#000" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -155,7 +155,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – Nitehub Documentation'
+        titleTemplate: '%s – ConvoyChat API Docs'
       }
     }
   },
@@ -165,7 +165,7 @@ const config: DocsThemeConfig = {
     text: () => {
       const { locale } = useRouter();
       return (
-        <a href="https://dochub.vercel.app/legal/updates" target="_blank">
+        <a href="https://convoydocs.vercel.app/legal/updates" target="_blank">
           {BANNER_TEXT_WITH_TRANSLATIONS[locale] || BANNER_TEXT_WITH_TRANSLATIONS["en-US"]}
         </a>
       );
