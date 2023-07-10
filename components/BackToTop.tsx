@@ -26,13 +26,13 @@ export default function BackToTop({}: Props) {
 
   return (
     <button
-      className="nx-text-xs flex flex-row gap-2 nx-font-medium nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
+      className="nx-text-xs flex items-center gap-2 nx-font-medium nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
       onClick={scrollToTop}
-      style={{ display: visible ? 'inline-flex' : 'none', paddingTop: '16px' }}
+      style={{ display: visible ? 'inline-flex' : 'none', paddingTop: '24px' }}
       children={
         <>
-          <ArrowUpCircle size={20} style={{ marginRight: '5px' }} />
-          <span style={{ marginLeft: '5px' }}>Back to top</span>
+          <ArrowUpCircle size={20} style={{ marginRight: '10px' }} />
+          <span style={{ marginLeft: '10px' }}>Back to top</span>
         </>
       }
     />
