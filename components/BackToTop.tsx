@@ -26,7 +26,7 @@ export default function BackToTop({}: Props) {
 
   return (
     <button
-      className="nx-text-xs flex items-center gap-2 nx-font-medium nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
+      className="nx-text-xs flex items-center gap-2 nx-font-semibold nx-text-gray-500 hover:nx-text-gray-900 dark:nx-text-gray-400 dark:hover:nx-text-gray-100 contrast-more:nx-text-gray-800 contrast-more:dark:nx-text-gray-50"
       onClick={scrollToTop}
       style={{ display: visible ? 'inline-flex' : 'none', paddingTop: '24px' }}
       children={
